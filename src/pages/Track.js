@@ -45,7 +45,7 @@ function TrackPage() {
 
         data.forEach((location) => {
           console.log(location)
-          var marker = new mapboxgl.Marker()
+          new mapboxgl.Marker()
                   .setLngLat(location.coordinates)
                   .setPopup(new mapboxgl.Popup({ offset: 30 })
                   .setHTML('<h4>' + location.city + '</h4>' + location.location))
