@@ -1,0 +1,45 @@
+.container{
+    padding: 0 12px 0 12px;
+}
+
+.mapboxgl-map{
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.mapboxgl-control-container{
+    visibility: hidden;
+}
+
+.title-text{
+    width: 30%;
+    background-color: #015B75;
+    margin: 0 auto;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.title-text h1{
+    color: white;
+}
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+@media (max-width:991px){
+    .title-text{
+        width: 80%;
+    }
+}

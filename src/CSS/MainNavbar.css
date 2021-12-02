@@ -1,0 +1,43 @@
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(254,254,254,0.92);
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: #015b75;
+    font-weight: bold;
+    padding: 0 5%;
+}
+
+header ul{
+    list-style: none;
+    margin: 0 30px;
+    display: flex;
+    align-items: baseline;
+}
+
+header li{
+    margin-left: 20px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #015b75;
+}
+
+header a:hover,
+header a:active,
+header a.active{
+    color: #015b75;
+}

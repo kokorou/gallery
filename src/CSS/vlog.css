@@ -1,0 +1,21 @@
+.container{
+    padding: 0 12px 0 12px;
+}
+
+.title-text{
+    width: 30%;
+    background-color: #015B75;
+    margin: 0 auto;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+.title-text h1{
+    color: white;
+}
+
+@media (max-width:991px){
+    .title-text{
+        width: 80%;
+    }
+}
