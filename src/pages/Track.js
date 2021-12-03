@@ -4,9 +4,10 @@ import '../webpack.config';
 import React, {useRef, useEffect} from "react";
 import mapboxgl from '!mapbox-gl';
 /* eslint import/no-webpack-loader-syntax: off */
+import data from '../data/map-data.geojson'
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VlZWxiIiwiYSI6ImNqdW01YmtmdjJlNHo0NHAzaWh6YmhrZ3QifQ.bFHG_eOZFdQ6eDDC7wvjNg';
 
-
+/*
 const data = [
 	{
 		"location": "Manhattan Ave & Norman Ave at NE corner",
@@ -25,8 +26,21 @@ const data = [
 		"city": "Manhattan",
 		"state": "New York",
 		"coordinates": [-73.9882730001973,40.718207001246554],
-	}
+	},
+  {
+		"location": "Tian an men",
+		"city": "Beijing",
+		"state": "Beijing",
+		"coordinates": [116.397492, 39.908960],
+	},
+  {
+    "location": "Tian an men",
+		"city": "Beijing",
+		"state": "Beijing",
+		"coordinates": [139.680475, 35.731968],
+  }
 ]
+*/
 
 
 function TrackPage() {
@@ -37,12 +51,10 @@ function TrackPage() {
           container: mapboxElRef.current,
           style: 'mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k',
           center: [138.5, 36.13],
-          tilequery:'https://api.mapbox.com/v4/weeelb.ckwnleq8l09ym20mk0ubo0vvd-4lt2v',
           zoom: 6.0,
         });
 
-        map.addControl(new mapboxgl.NavigationControl());
-
+        /*
         data.forEach((location) => {
           console.log(location)
           new mapboxgl.Marker()
@@ -50,8 +62,26 @@ function TrackPage() {
                   .setPopup(new mapboxgl.Popup({ offset: 30 })
                   .setHTML('<h4>' + location.city + '</h4>' + location.location))
                   .addTo(map);
-    
         });
+        */
+        map.on('load', function () {
+          map.addSource('point_sample', {
+              type: 'geojson',
+              data: data
+          });
+
+          map.addLayer({
+              "id": "point_sample",
+              "type": "circle",
+              "source": "point_sample",
+              "layout": {},
+              "paint": {
+                  'circle-color': "rgba(255, 20, 147, 0.75)",
+                  'circle-radius': 5
+              }
+          });
+        });
+        map.addControl(new mapboxgl.NavigationControl());
     }, []);
 
     return (

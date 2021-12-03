@@ -17,7 +17,7 @@ class Vlog extends React.Component {
   };
 
   componentDidMount() {
-    this.onTermSubmit("weeelb光影 首秀");
+    this.onTermSubmit("weeelb");
   }
 
   onTermSubmit = async (term) => {
