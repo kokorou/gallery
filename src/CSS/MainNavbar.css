@@ -32,12 +32,64 @@ header li{
 
 header a{
     text-decoration: none;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.8px;
     color: #015b75;
 }
 
 header a:hover,
 header a:active,
 header a.active{
+    color: rgba(255, 20, 147, 0.9);
+}
+
+.btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 2rem;
     color: #015b75;
+}
+
+@media screen and (max-width: 900px) {
+    header a{
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    nav{
+        width: 100%;
+    }
+
+    header ul{
+        flex-direction: column;
+        height: 20px;
+        margin-top: 5rem;
+        width: 100%;
+        align-items: flex-end;
+    }
+    header li:nth-child(1){
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    header li{
+        width: 100%;
+        border-top:1px solid rgba(255,255,255,0.1);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+        background-color: rgba(254,254,254,0.92);
+    }
+    .btn{
+        display: block;
+        color: #015b75;
+    }
+    .btn:hover{
+        color:#015b75;
+    }
 }
