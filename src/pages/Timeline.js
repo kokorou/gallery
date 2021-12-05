@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MdSearch } from 'react-icons/md';
 import ProjectItem from "../components/ProjectItem";
 import ProjectInfo from "../data/timeline-data";
+import SectionTitle from "../components/SectionTitle";
 import '../CSS/timeline.css';
 
 const TimelinePage =() =>{
@@ -28,16 +29,7 @@ const TimelinePage =() =>{
 
     return (
         <>
-        <div className="container">
-          <div className="row yt">
-              <div className="title-text">
-                <h1 className="text-center col-md-12">
-                <i class="fab fa-youtube-square"></i>
-                &nbsp; Weeelb Timeline
-                </h1>
-              </div>
-          </div>
-        </div>
+        <SectionTitle heading="Timeline" subheading="some of my recent works"/>
         <div className="tl">
             <div className="searchBar">
                 <form>
@@ -47,19 +39,20 @@ const TimelinePage =() =>{
                     onChange={handleChange}
                     placeholder = "Project Name"
                     />
-                    < MdSearch className="searchicon"/>
+                    < MdSearch className="searchIcon"/>    
                 </form>
             </div>
             <div className="allitems">
                 {projectData.map(item=> (
                     <ProjectItem
                         key={item.id}
-                        title={item.title}
+                        title={item.name}
                         desc={item.desc}
                         img={item.img}
                     />
                 ))}
             </div>
+        
         </div>
         </>
     )

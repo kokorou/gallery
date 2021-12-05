@@ -1,33 +1,42 @@
 .tl{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 .allitems {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
+
 .searchBar {
   position: relative;
   width: 300px;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  border-style: groove;
+  border-color: rgba(1, 91, 117,0.75);
+  border-radius: 10px;
+  
 }
 .searchBar input {
   width: 100%;
-  font-size: 2rem;
-  padding: 0 0.8rem;
+  font-family: 'RobotoMono Regular';
+  font-size: 1.8rem;
+  padding: 0.2rem 1rem;
   border-radius: 6px;
   outline: none;
   border: none;
 }
-.searchicon {
+.searchIcon {
+  font-size: 2.6rem;
+  margin-top: 0.3rem;
+  margin-left: 10px;
   position: absolute;
-  font-size: 2rem;
-  margin-top: 0.5rem;
+  background-color: #015B75;
+  border-radius: 50%;
 }
 .searchBar .searchIcon path {
-  color: var(--deep-dark);
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .searchBar,

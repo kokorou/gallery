@@ -70,7 +70,6 @@ header a.active{
     header ul{
         flex-direction: column;
         height: 20px;
-        margin-top: 5rem;
         width: 100%;
         align-items: flex-end;
     }

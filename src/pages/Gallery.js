@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import '../CSS/gallery.css'
-import CloseIcon from '../img/Close-40.png'
+import '../CSS/gallery.css';
+import SectionTitle from "../components/SectionTitle";
+import CloseIcon from '../img/Close-40.png';
 
 import Img1 from '../img/img_1.jpg';
 import Img2 from '../img/img_2.jpg';
@@ -103,14 +104,7 @@ const Gallery =() =>{
                 <img src={CloseIcon} class="close" onClick={()=>setModel(false)} alt="img" />
             </div>
 
-            <div className="row yt">
-                <div className="title-text">
-                    <h1 className="text-center col-md-12">
-                    <i class="fab fa-youtube-square"></i>
-                    &nbsp; Weeelb Class
-                    </h1>
-                </div>
-            </div>
+            <SectionTitle heading="CLASS" subheading="some of my recent works"/>
 
             <div class="gallery">
                 {data.map((item, index)=>{

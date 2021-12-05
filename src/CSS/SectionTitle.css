@@ -1,0 +1,83 @@
+.section-title{
+    text-align: center; 
+    padding-top: 4rem;
+}
+.section-title p{
+    font-family: 'RobotoMono Regular';
+    font-size: 1.7rem;
+    color: #015b75;
+    margin-bottom: 0;
+}
+.section-title h2{
+    width: 40%;
+    margin: 0 auto ;
+    border-radius: 30px;
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #015b75;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .section-title p{
+        font-size: 1.65rem;
+    }
+    .section-title h2{
+        width: 50%;
+        font-size: 3.4rem;
+        border-radius: 27px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .section-title p{
+        font-size: 1.6rem;
+    }
+    .section-title h2{
+        width: 60%;
+        font-size: 3.3rem;
+        border-radius: 24px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .section-title p{
+        font-size: 1.55rem;
+    }
+    .section-title h2{
+        width: 70%;
+        font-size: 3.2rem;
+        border-radius: 21px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .section-title p{
+        font-size: 1.5rem;
+    }
+    .section-title h2{
+        width: 80%;
+        font-size: 3.1rem;
+        border-radius: 18px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .section-title p{
+        font-size: 1.45rem;
+    }
+    .section-title h2{
+        width: 90%;
+        font-size: 3.0rem;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .section-title p{
+        font-size: 1.4rem;
+    }
+    .section-title h2{
+        width: 100%;
+        font-size: 3.0rem;
+        border-radius: 12px;
+    }
+}

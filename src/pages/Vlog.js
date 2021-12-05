@@ -4,6 +4,7 @@ import SearchBar from "../components/SearchBar";
 import youtube from "../apis/youtubeapi";
 import VideoList from "../components/VideoList";
 import VideoDetails from "../components/VideoDetails";
+import SectionTitle from "../components/SectionTitle";
 import '../CSS/vlog.css'
 
 class Vlog extends React.Component {
@@ -32,14 +33,7 @@ class Vlog extends React.Component {
     return (
       <>
         <div className="container">
-          <div className="row yt">
-              <div className="title-text">
-                <h1 className="text-center col-md-12">
-                <i class="fab fa-youtube-square"></i>
-                &nbsp; Weeelb Vlog
-                </h1>
-            </div>
-          </div>
+          <SectionTitle heading="Vlog" subheading="some of my recent works"/>
           <div className="row my-2">
             <div className="col-md-8">
               <SearchBar onFormSubmit={this.onTermSubmit} />

@@ -2,9 +2,10 @@ import '../CSS/track.css';
 import "mapbox-gl/dist/mapbox-gl.css";
 import '../webpack.config';
 import React, {useRef, useEffect} from "react";
+import SectionTitle from "../components/SectionTitle";
 import mapboxgl from '!mapbox-gl';
 /* eslint import/no-webpack-loader-syntax: off */
-import data from '../data/map-data.geojson'
+import data from '../data/map-data.geojson';
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VlZWxiIiwiYSI6ImNqdW01YmtmdjJlNHo0NHAzaWh6YmhrZ3QifQ.bFHG_eOZFdQ6eDDC7wvjNg';
 
 /*
@@ -87,14 +88,7 @@ function TrackPage() {
     return (
     <div>
         <div className="container">
-          <div className="row yt">
-              <div className="title-text">
-                <h1 className="text-center col-md-12">
-                <i class="fab fa-youtube-square"></i>
-                &nbsp; Weeelb Track
-                </h1>
-            </div>
-          </div>
+          <SectionTitle heading="Track" subheading="some of my recent works"/>
           <div ref={mapboxElRef} className="map-container" />
         </div>
     </div>
