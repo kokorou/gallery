@@ -7,6 +7,7 @@ import TimelinePage from './pages/Timeline';
 import Gallery from './pages/Gallery';
 import MainNavbar from './components/MainNavBar';
 import Footer from './components/Footer'
+import CollectionPage from './pages/Collection';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/vlog" element={<VlogPage />} />
           <Route path="/track" element={<TrackPage />} />
+          <Route path="/collection" element={<CollectionPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>

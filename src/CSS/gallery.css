@@ -18,17 +18,121 @@
     transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 12px;
+    overflow: hidden;
+    transition: .3s ease box-shadow;
+    position: relative;
 }
 
-@media (max-width:991px){
+.gallery .pics:hover{
+    box-shadow: 0px 0px 20px 3px #00000042;
+}
+
+.gallery .pics .desc{
+    margin-top: 0;
+    z-index: 11;
+    opacity: 0;
+    padding: auto;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+}
+.gallery .pics .desc:hover{
+    opacity: 1;
+}
+
+.gallery .pics .imgbox{
+    z-index: 5;
+}
+
+.gallery .pics .desc .middle{
+    vertical-align: middle;
+    margin: 60px auto;
+}
+
+.gallery .pics .desc h2{
+    vertical-align:middle;  
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    margin-top: 5px;
+    
+}
+
+.gallery .pics .desc p{
+    vertical-align:middle;  
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat Bold';
+    margin-bottom: 5px;
+    
+}
+
+@media (max-width:1300px){
+    .gallery{
+        column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+    }
+    .gallery .pics .desc h2{
+        font-size: 28px;
+    }
+    
+    .gallery .pics .desc p{
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width:1000px){
     .gallery{
         column-count: 2;
         -webkit-column-count: 2;
         -moz-column-count: 2;
     }
+    .gallery .pics .desc .middle{
+        margin: 90px auto;
+    }
+    .gallery .pics .desc h2{
+        font-size: 26px;
+    }
+    
+    .gallery .pics .desc p{
+        font-size: 18px;
+    }
 }
 
-@media (max-width:480px){
+@media (max-width:800px){
+    .gallery .pics .desc .middle{
+        margin: 70px auto;
+    }
+    .gallery .pics .desc h2{
+        font-size: 24px;
+    }
+    
+    .gallery .pics .desc p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px){
+    .gallery .pics .desc .middle{
+        margin: 50px auto;
+    }
+
+    .gallery .pics .desc h2{
+        font-size: 22px;
+    }
+    
+    .gallery .pics .desc p{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:500px){
     .gallery{
         column-count: 1;
         column-width: 100%;
@@ -37,6 +141,16 @@
         -moz-column-count: 1;
         -moz-column-width: 100%;
      }
+     .gallery .pics .desc .middle{
+        margin: 80px auto;
+    }
+     .gallery .pics .desc h2{
+        font-size: 26px;
+    }
+    
+    .gallery .pics .desc p{
+        font-size: 18px;
+    }
 }
 
 .model{

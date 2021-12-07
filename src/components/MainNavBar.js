@@ -29,7 +29,7 @@ const MainNavbar =() =>{
                 {(toggleMenu || screenWidth > 800) && (
                 <ul>
                     <li>
-                        <Link to='/'>Main</Link>
+                        <Link to='/'>Classic</Link>
                     </li>
                     <li>
                         <Link to='/timeline'>Timeline</Link>
@@ -39,6 +39,9 @@ const MainNavbar =() =>{
                     </li>
                     <li>
                         <Link to='/track'>Track</Link>
+                    </li>
+                    <li>
+                        <Link to='/collection'>Collection</Link>
                     </li>
                     <li>
                         <Link to='/about'>About</Link>
