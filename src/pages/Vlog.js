@@ -5,7 +5,8 @@ import youtube from "../apis/youtubeapi";
 import VideoList from "../components/VideoList";
 import VideoDetails from "../components/VideoDetails";
 import SectionTitle from "../components/SectionTitle";
-import { Icon } from '@iconify/react';
+import bili_ico from "../image/icon/bilibili.ico"
+import youtu_ico from "../image/icon/youtube.ico"
 import '../CSS/vlog.css'
 
 class Vlog extends React.Component {
@@ -38,7 +39,7 @@ class Vlog extends React.Component {
           <div className="row my-2">
             <div className="col-md-8">
               <div className="chanlogo">
-                <p>Welcome to&nbsp;&nbsp;<a href="https://space.bilibili.com/400912136"><Icon icon="simple-icons:bilibili" /></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCi9x19As0wRHppA3b2GPDCg"><Icon icon="logos:youtube-icon" /></a></p>
+                <p>Welcome to&nbsp;&nbsp;<a href="https://space.bilibili.com/400912136"><img src={bili_ico} alt="bilibili"/></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCi9x19As0wRHppA3b2GPDCg"><img src={youtu_ico} alt="youtube"/></a></p>
               </div>
               <SearchBar onFormSubmit={this.onTermSubmit} />
               <VideoDetails video={this.state.selectedVideo} />

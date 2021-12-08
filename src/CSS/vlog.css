@@ -10,6 +10,10 @@
     font-size: 25px;
 }
 
+.chanlogo p a img{
+    width: 28px;
+}
+
 .title-text{
     width: 30%;
     background-color: #015B75;

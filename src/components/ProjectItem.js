@@ -1,5 +1,5 @@
 import React from "react";
-import OneImg from '../img/img_1.jpg';
+import OneImg from '../image/icon/bilibili.ico';
 import '../CSS/ProjectItem.css';
 
 

@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import OneImg from '../img/img_1.jpg';
-import TwoImg from '../img/img_2.jpg';
-import ThreeImg from '../img/img_3.jpg';
-import FourImg from '../img/img_4.jpg';
-import FiveImg from '../img/img_5.jpg';
-import SixImg from '../img/img_6.jpg';
+import OneImg from '../image/DSC00735_15.jpg';
+import TwoImg from '../image/DSC00735_15.jpg';
+import ThreeImg from '../image/DSC00735_15.jpg';
+import FourImg from '../image/DSC00735_15.jpg';
+import FiveImg from '../image/DSC00735_15.jpg';
+import SixImg from '../image/DSC00735_15.jpg';
 
 const tldata = [
     {
