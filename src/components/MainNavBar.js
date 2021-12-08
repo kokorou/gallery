@@ -29,7 +29,7 @@ const MainNavbar =() =>{
                 {(toggleMenu || screenWidth > 800) && (
                 <ul>
                     <li>
-                        <Link to='/'>Classic</Link>
+                        <Link to='/'>Selected</Link>
                     </li>
                     <li>
                         <Link to='/timeline'>Timeline</Link>

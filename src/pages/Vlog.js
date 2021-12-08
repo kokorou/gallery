@@ -5,6 +5,7 @@ import youtube from "../apis/youtubeapi";
 import VideoList from "../components/VideoList";
 import VideoDetails from "../components/VideoDetails";
 import SectionTitle from "../components/SectionTitle";
+import { Icon } from '@iconify/react';
 import '../CSS/vlog.css'
 
 class Vlog extends React.Component {
@@ -36,6 +37,9 @@ class Vlog extends React.Component {
           <SectionTitle heading="Vlog" subheading="some of my recent works"/>
           <div className="row my-2">
             <div className="col-md-8">
+              <div className="chanlogo">
+                <p>Welcome to&nbsp;&nbsp;<a href="https://space.bilibili.com/400912136"><Icon icon="simple-icons:bilibili" /></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCi9x19As0wRHppA3b2GPDCg"><Icon icon="logos:youtube-icon" /></a></p>
+              </div>
               <SearchBar onFormSubmit={this.onTermSubmit} />
               <VideoDetails video={this.state.selectedVideo} />
             </div>
@@ -45,9 +49,6 @@ class Vlog extends React.Component {
                 onSelectVideo={this.onSelectVideo}
               />
             </div>
-          </div>
-          <div className="info">
-              <h1>Message!</h1>
           </div>
         </div>
       </>

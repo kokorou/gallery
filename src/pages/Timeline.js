@@ -3,12 +3,15 @@ import { MdSearch } from 'react-icons/md';
 import ProjectItem from "../components/ProjectItem";
 import ProjectInfo from "../data/timeline-data";
 import SectionTitle from "../components/SectionTitle";
+import Modal from "../components/Modal";
 import '../CSS/timeline.css';
 
 const TimelinePage =() =>{
 
     const [searchText, setSearchText] = useState('');
     const [projectData, setProjectData] = useState(ProjectInfo);
+
+    const [selectedImg, setSelectedImg] = useState(null);
 
     useEffect(() => {
         if (searchText === '') return;
@@ -49,9 +52,11 @@ const TimelinePage =() =>{
                         title={item.name}
                         desc={item.desc}
                         img={item.img}
+                        setSelectedImg = {setSelectedImg}
                     />
                 ))}
             </div>
+           {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
         
         </div>
         </>

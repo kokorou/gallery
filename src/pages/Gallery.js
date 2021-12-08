@@ -1,29 +1,31 @@
 import React, {useState} from 'react';
 import '../CSS/gallery.css';
 import SectionTitle from "../components/SectionTitle";
-import CloseIcon from '../img/Close-40.png';
 import data from '../data/class-data';
-
 
 const Gallery =() =>{
 
     const [model, setModel] = useState(false);
-    const [tempimgSrc, setTempImgsrc] = useState('');
+    const [tempimgSrc, setTempImgsrc] = useState(null);
 
     const getImg = (imgSrc) => {
         setTempImgsrc(imgSrc);
         setModel(true);
     }
 
+    const handleClick = (e) => {
+        if(e.target.classList.contains('model')){
+            setModel(null);
+        }
+    }
+
     return (
-        <>
-            <div class={model? "model open": "model"}>
+        <>  
+            <div className={model? "model open": "model"} onClick={handleClick}>
                 <img src={tempimgSrc} alt="img"/>
-                <img src={CloseIcon} class="close" onClick={()=>setModel(false)} alt="img" />
             </div>
             
-
-            <SectionTitle heading="CLASSIC" subheading="some of my recent works"/>
+            <SectionTitle heading="SELECTED" subheading="Selected photos from gallery"/>
 
             <div class="gallery">
                 {data.map((item, index)=>{

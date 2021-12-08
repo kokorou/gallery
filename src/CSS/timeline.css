@@ -1,12 +1,12 @@
 .tl{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 .allitems {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .searchBar {
@@ -21,16 +21,16 @@
 .searchBar input {
   width: 100%;
   font-family: 'RobotoMono Regular';
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   padding: 0.2rem 1rem;
   border-radius: 6px;
   outline: none;
   border: none;
 }
 .searchIcon {
-  font-size: 2.6rem;
-  margin-top: 0.3rem;
-  margin-left: 10px;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-left: 15px;
   position: absolute;
   background-color: #015B75;
   border-radius: 50%;
@@ -38,10 +38,55 @@
 .searchBar .searchIcon path {
   color: #fff;
 }
-@media only screen and (max-width: 768px) {
-  .searchBar,
-  .searchBar form,
-  .searchBar input {
-    width: 100%;
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
+.backdrop img{
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 16vh auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+@media only screen and (max-width: 630px) {
+  .searchBar{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .backdrop img{
+    max-width: 70%;
+    max-height: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .backdrop img{
+    max-width: 80%;
+    max-height: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .backdrop img{
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .backdrop img{
+    max-width: 92%;
+    max-height: 95%;
   }
 }

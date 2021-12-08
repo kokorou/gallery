@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery';
 import MainNavbar from './components/MainNavBar';
 import Footer from './components/Footer'
 import CollectionPage from './pages/Collection';
+import Copyright from './components/copyright';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </div>
       <Footer/>
+      <Copyright />
     </Router>
   );
 }
