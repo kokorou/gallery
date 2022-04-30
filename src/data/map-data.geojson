@@ -6,6 +6,7 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.637991, 35.455238 ] }, "properties": {"description": "Yokohama"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.629874, 35.129177 ] }, "properties": {"description": "Jyogashima"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 138.727483, 35.360624 ] }, "properties": {"description": "M.Fuji"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 138.763696, 35.507611 ] }, "properties": {"description": "Kawaguchiko"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.047940, 35.250718 ] }, "properties": {"description": "Gora"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 138.643641, 36.340663 ] }, "properties": {"description": "Karuizawa"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 138.824566, 36.982477 ] }, "properties": {"description": "Maiko"}},
@@ -13,6 +14,8 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.7452974, 35.2564118 ] }, "properties": {"description": "Kannosaki"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.479812, 35.299204 ] }, "properties": {"description": "Enoshima"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.4887315, 35.9273872 ] }, "properties": {"description": "Kawagoe"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.673946, 35.285523 ] }, "properties": {"description": "Yokosuga"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.572657, 35.291868 ] }, "properties": {"description": "Zushi"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.9702241, 35.8648162 ] }, "properties": {"description": "Kashiwa"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.2018536, 35.7410848 ] }, "properties": {"description": "Sakura"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 135.7587419, 34.9859312 ] }, "properties": {"description": "Kyoto"}},
@@ -29,6 +32,7 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 116.3887213, 39.913499 ] }, "properties": {"description": "Beijing"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.600342, 36.406375 ] }, "properties": {"description": "Hitachikaihin"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.588996, 36.315375 ] }, "properties": {"description": "OaraiJinjya"}},
-{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.600921, 35.194527 ] }, "properties": {"description": "Arasaki"}}
-]
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.600921, 35.194527 ] }, "properties": {"description": "Arasaki"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.440332, 35.763468 ] }, "properties": {"description": "TamaLake"}}
+] 
 }
