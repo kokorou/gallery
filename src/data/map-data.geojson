@@ -28,6 +28,6 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 116.9910076, 35.5962667 ] }, "properties": {"description": "Qufu"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 116.3887213, 39.913499 ] }, "properties": {"description": "Beijing"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.600342, 36.406375 ] }, "properties": {"description": "Hitachikaihin"}},
-{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.588996, 36.315375 ] }, "properties": {"description": "OaraiJinjya"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.588996, 36.315375 ] }, "properties": {"description": "OaraiJinjya"}}
 ]
 }
