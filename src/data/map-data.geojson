@@ -26,5 +26,6 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 117.1769678, 34.259794 ] }, "properties": {"description": "Xuzhou"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 116.9910076, 35.5962667 ] }, "properties": {"description": "Qufu"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 116.3887213, 39.913499 ] }, "properties": {"description": "Beijing"}}
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 140.600342, 36.406375 ] }, "properties": {"description": "国営ひたち海浜公園"}}
 ]
 }
