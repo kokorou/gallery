@@ -1,6 +1,6 @@
 
 {
-"type": "FeatureCollection", 
+"type": "FeatureCollection",
 "features": [
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.680555, 35.731900 ] }, "properties": {"description": "Tokyo"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 139.637991, 35.455238 ] }, "properties": {"description": "Yokohama"}},
@@ -21,6 +21,7 @@
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 135.7587419, 34.9859312 ] }, "properties": {"description": "Kyoto"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 135.4960534, 34.702136 ] }, "properties": {"description": "Osaka"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 135.842892, 34.685319 ] }, "properties": {"description": "Nara"}},
+{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 137.606294, 34.780642 ] }, "properties": {"description": "LakeHamana"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 128.948828, 35.173536 ] }, "properties": {"description": "Busan"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 145.718009, 15.215353 ] }, "properties": {"description": "Saipan"}},
 { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 121.500496, 31.237984 ] }, "properties": {"description": "Shanghai"}},
